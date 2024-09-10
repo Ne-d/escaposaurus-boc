@@ -16,18 +16,18 @@
 
 /*array of password for the folders */
 /*and as it is linear, which folder can be unlocked at which sequence*/
-$passProtected['nz'] = ["bob", 0] ;
-$passProtected['japon'] = ["rite", 1] ;
-$passProtected['tokyo'] = ["liberty", 2] ;
-$passProtected['perso'] = ["inde", 3] ;
+$passProtected['session_admin'] = ["session_admin", 0] ;
+$passProtected['Tech'] = ["Tech", 1] ;
+$passProtected['Perso'] = ["Perso", 2] ;
+$passProtected['Souvenirs'] = ["Souvenirs", 3] ;
 
 
 
 /*full path to the root folder of the content */
-$dirToScan = $_SERVER['DOCUMENT_ROOT'].'/elodisk/elodisk_gamedata/udisk' ;
+$dirToScan = $_SERVER['DOCUMENT_ROOT'].'/home/ned/Enjmin/M1/escaposaurus-boc/boc_gamedata/udisk/' ;
 
 /*full path to the json file to write in the end*/
-$jsonfilepath = $_SERVER['DOCUMENT_ROOT'].'/elodisk/elodisk_gamedata/udisk.json' ;
+$jsonfilepath = $_SERVER['DOCUMENT_ROOT'].'/home/ned/Enjmin/M1/escaposaurus-boc/boc_gamedata/udisk.json' ;
 
 
 /* END CONFIGURATION*/
