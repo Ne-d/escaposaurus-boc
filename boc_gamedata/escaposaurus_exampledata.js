@@ -13,7 +13,7 @@
 	*/
 	/*either online with VOD server and JSON load of data
 	either local */
-		
+	
 var isLocal = true;
 var gameRoot = "./";
 var gameDataRoot = gameRoot + "boc_gamedata/";
@@ -43,7 +43,10 @@ var udiskData =
 		"folders": [
 			{
 				"folders": [
-					{ "foldername": "Corbeille" },
+					{
+						"foldername": "Corbeille",
+						"files": ["note_admin.jpg"]
+					},
 					{
 						"folders": [
 							{
@@ -119,7 +122,7 @@ var gameThanks = "TODO: Remerciements : <br/> ;)";
 
 var OSName = "BOC Archive Mainframe";
 var explorerName = "BOC Archive File Explorer";
-var callerAppName = "Contacts";
+var callerAppName = "ePhone 4";
 
 /*titles of video windows*/
 var titleData = {};
@@ -128,7 +131,7 @@ titleData.epilogueTitle = "TODO: Nom de la fenêtre d'épilogue.";
 titleData.callTitle = "TODO: Appel en cours";
 
 /*change of caller app prompt for each sequence*/
-var promptDefault = "TODO: Rien à demander, ne pas les déranger.";
+var promptDefault = "Contacts";
 var prompt = [];
 // TODO: Change those.
 prompt[0] = "Prendre contact";
@@ -153,17 +156,42 @@ seqMainHint[3] = "swisstopo-screen.png";
 their img need to be placed in their video folder, username is their displayed name
 */
 var normalContacts = [];
-normalContacts[0] = { "vid": "Denise", "vod_folder": "", "username": "Denise (guide)", "canal": "video", "avatar": "denise_avatar.jpg" };
-normalContacts[1] = { "vid": "Nathalie", "vod_folder": "", "username": "Nathalie (guide)", "canal": "video", "avatar": "nata_avatar.jpg" };
+normalContacts[0] = {
+	"vid": "Avocat",
+	"vod_folder": "",
+	"username": "Maître Vernier (Avocat)",
+	"canal": "video",
+	"avatar": "avocat_avatar.png"
+};
+
+normalContacts[1] = {
+	"vid": "Mamie",
+	"vod_folder": "",
+	"username": "Mamie Henriette Dupuis",
+	"canal": "video",
+	"avatar": "mamie_avatar.png"
+};
 
 /*second part of the list, contact that can help the player*/
 var helperContacts = [];
-helperContacts[0] = { "vid": "Albert", "vod_folder": "", "username": "Albert (pour avoir un indice)", "canal": "txt", "avatar": "albert.png", "bigAvatar": "albertbig.png" };
-/*helperContacts[1] = {"vid" : "Lou", "username" : "Lou (pour avoir un deuxième indice) - par message", "canal" : "txt", "avatar" : "Lou_opt.jpg", "bigAvatar" : "avatarHelper2Big.gif"} ;*/
+helperContacts[0] = {
+	"vid": "Camera",
+	"vod_folder": "",
+	"username": "Cam 1",
+	"canal": "video",
+	"avatar": "camera_avatar.png",
+};
 
+helperContacts[1] = {
+	"vid": "Camera",
+	"vod_folder": "",
+	"username": "Cam 2",
+	"canal": "video",
+	"avatar": "camera_avatar.png",
+};
 
 /*ce qui apparait quand on trouve le dernier élément du disque dur*/
-finalStepAdded = "TODO: Message quand la dernière étape est achevée.";
+finalStepAdded = "TODO: Message quand la dernière étape est débloqué.";
 
 /*the last call, it can be the person we find in the end or anyone else we call to end the quest, allows the game to know it is the final contact that is called and to proceed with the ending*/
 var missingContact = { "vid": "missing", "vod_folder": "", "username": "Nathalie", "canal": "video", "avatar": "nata_avatar.jpg" };
