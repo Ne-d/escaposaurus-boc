@@ -117,9 +117,9 @@ var gameMissionAccept = "&raquo;&raquo; TODO: Accéder à l'ordinateur (JOUER) &
 var gameCredit = "TODO: Un jeu conçu et réalisé par : <br/>Stéphanie Mader";
 var gameThanks = "TODO: Remerciements : <br/> ;)";
 
-var OSName = "TODO: Nom du système d'exploitation.";
-var explorerName = "TODO: Nom de l'explorateur.";
-var callerAppName = "TODO: Nom de l'applcation des contacts.";
+var OSName = "BOC Archive Mainframe";
+var explorerName = "BOC Archive File Explorer";
+var callerAppName = "Contacts";
 
 /*titles of video windows*/
 var titleData = {};
@@ -185,6 +185,6 @@ instructionText.password = "Vous devez trouver et entrer le mot de passe d'un de
 
 /*please note the %s into the text that allow to automatically replace them with the right content according to which sequence the player is in*/
 var solutionText = {};
-solutionText.winState = "Si Sabine a été secourue, le jeu est fini bravo.";
+solutionText.winState = "TODO: Si Sabine a été secourue, le jeu est fini bravo.";
 solutionText.lackMainHint = "Vous devez ouvrir le fichier <b>%s</b><br/>";
 solutionText.password = "Vous devez déverouiller le dossier <b>%s1</b><br/>avec le mot de passe : <b>%s2</b><br/>";
