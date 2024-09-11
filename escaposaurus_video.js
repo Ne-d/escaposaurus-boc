@@ -103,6 +103,7 @@ function loadGame(folders, files, overlay){
 
     createContactList() ;
     lockContacts() ;
+	unlockContact(0) ;
 
     /*launch lightbox after creation of the udisk to make it work*/
     startLighBox() ;
@@ -149,6 +150,14 @@ function unlockContacts(){
 	for(var i = 0 ; i < z.length ; i++){
 		z[i].classList.remove("no-call") ;
 	}
+}
+
+function unlockContact(contactNumber) {
+	var p = document.getElementById("callApp-prompt") ;
+	p.innerHTML = prompt[sequenceNumber] ;
+
+	var z = document.getElementsByClassName('contact-div') ;
+	z[contactNumber].classList.remove("no-call") ;
 }
 
 function lockContacts(){

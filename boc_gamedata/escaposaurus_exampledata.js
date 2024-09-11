@@ -23,11 +23,10 @@ var videoRoot = gameDataRoot + "videos/";
 var contactVideoRoot = videoRoot + "contactVideo/";
 
 /*full path to intro / outro video*/
-// TODO: Create these videos, or find a way to hide them.
-var missionVideoPath = videoRoot + "introVideo/intro1.mp4";
-var introVideoPath = videoRoot + "introVideo/intro2.mp4";
-var missingVideoPath = videoRoot + "contactVideo/missing/final.mp4";
-var epilogueVideoPath = videoRoot + "epilogueVideo/epiloguecredit.mp4";
+var missionVideoPath = videoRoot + "introVideo/intro1.mp4"; // TODO
+var introVideoPath = videoRoot + "introVideo/intro.mp4"; // TODO
+var missingVideoPath = videoRoot + "contactVideo/missing/final.mp4"; // TODO
+var epilogueVideoPath = videoRoot + "epilogueVideo/epiloguecredit.mp4"; // TODO
 
 /*udisk JSON path*/
 var udiskRoot = gameDataRoot + "udisk/";
@@ -55,50 +54,51 @@ var udiskData =
 										"folders": [
 											{
 												"files": [
-													"Max_1958.jpg",
-													"Max_couleur.jpg",
-													"Max_polaroid_1.jpg",
-													"Max_polaroid_2.jpg",
+													"Maximus_1958.jpg",
+													"Maximus_couleur.jpg",
+													"Maximus_polaroid_1.jpg",
+													"Maximus_polaroid_2.jpg",
 													"Josseline_1980.jpg",
 													"Josseline_couleur.jpg",
 													"Josseline_polaroid.jpg",
-													"Max_1981.jpg"
+													"Maximus_1981.jpg"
 												],
 												"foldername": "Mes_bebous"
 											},
 											{
 												"files":
-													["TODO_photo_non_croppee.png"],
-												"password": "Souvenirs",
+													["photo_avec_michel_1940.png"],
+												"password": "stylos",
 												"sequence": 3,
 												"foldername": "Souvenirs"
 											}
 										],
 										"files": [
-											"TODO_memo_anniversaire.txt",
-											"TODO_poeme_prefere.png"
+											"memo_heritiers.png",
+											"poeme_prefere.png"
 										],
-										"password": "Perso",
+										"password": "1943",
 										"sequence": 2,
 										"foldername": "Perso"
 									}
 								],
 								"files": [
-									"TODO_Dossiers compromettants +++",
-									"TODO_fichier encre cancer",
-									"TODO_plan_boc_proto_V3_final.png",
-									"TODO_armee_air.png"
+									"association_ecologique_de_france.png",
+									"telegramme.png",
+									"resultat_analyse_12_12_2009.jpg",
+									"plan_boc_proto_V3_final.jpg",
+									"article_armee_air.jpg"
 								],
-								"foldername": "Entreprise"
+								"foldername": "Entreprise",
+								"sequence": 1,
+								"password": "bille"
 							}
 						],
 						"files": [
 							"MDP_tableau.png",
 							"plan_boc.png",
-							"scan_journal.jpg"
+							"scan_journal.png"
 						],
-						"password": "Tech",
-						"sequence": 1,
 						"foldername": "Tech"
 					},
 					{
@@ -106,7 +106,7 @@ var udiskData =
 						, "foldername": "T\u00e9l\u00e9chargements"
 					}
 				],
-				"password": "session_admin",
+				"password": "inbocwetrust",
 				"sequence": 0,
 				"foldername": "session_admin"
 			}
@@ -141,7 +141,7 @@ prompt[0] = "Prendre contact";
 prompt[1] = "";
 prompt[2] = "";
 prompt[3] = "Envoyer la carte";
-prompt[4] = "Appeler Nathalie pour savoir où en sont les secours.";
+prompt[4] = "Appelez Maître Vernier pour conclure.";
 
 /*when the sequence number reach this, the player win, the missing contact is added and the player can call them*/
 var sequenceWin = 4;
@@ -150,10 +150,10 @@ var sequenceWin = 4;
 /*if you put in the string "noHint", player will be able to immediatly call the contact at the beginning of the sequence*/
 /*if you put "none" or anything that is not an existing filename, the player will NOT be able to call the contacts during this sequence*/
 var seqMainHint = [];
-seqMainHint[0] = "scan_memo.png";
-seqMainHint[1] = "aucun"; /*if you put anything that is not an existing filename of the udisk, the player will never be able to call any contacts or get helps during this sequence*/
-seqMainHint[2] = "aucun";
-seqMainHint[3] = "swisstopo-screen.png";
+seqMainHint[0] = "noHint";
+seqMainHint[1] = "noHint"; /*if you put anything that is not an existing filename of the udisk, the player will never be able to call any contacts or get helps during this sequence*/
+seqMainHint[2] = "noHint";
+seqMainHint[3] = "noHint";
 
 /*contact list, vid is the name of their folder in the videoContact folder, then the game autoload the video named seq%number of the current sequence%, e.g. seq0.MP4 for the first sequence (numbered 0 because computer science habits)
 their img need to be placed in their video folder, username is their displayed name
@@ -197,7 +197,13 @@ helperContacts[1] = {
 finalStepAdded = "TODO: Message quand la dernière étape est débloqué.";
 
 /*the last call, it can be the person we find in the end or anyone else we call to end the quest, allows the game to know it is the final contact that is called and to proceed with the ending*/
-var missingContact = { "vid": "missing", "vod_folder": "", "username": "Nathalie", "canal": "video", "avatar": "nata_avatar.jpg" };
+var missingContact = {
+	"vid": "Avocat",
+	"vod_folder": "",
+	"username": "Maître Vernier (Avocat)",
+	"canal": "video",
+	"avatar": "avocat_avatar.jpg"
+};
 
 /*Lou only send text message, they are stored here*/
 var tips = {};
