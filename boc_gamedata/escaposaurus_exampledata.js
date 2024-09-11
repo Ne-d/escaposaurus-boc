@@ -45,7 +45,7 @@ var udiskData =
 				"folders": [
 					{
 						"foldername": "Corbeille",
-						"files": ["note_admin.jpg"]
+						"files": ["note_admin.png"]
 					},
 					{
 						"folders": [
@@ -55,13 +55,16 @@ var udiskData =
 										"folders": [
 											{
 												"files": [
-													"TODO_Max_aboie.png",
-													"TODO_Max_anniversaire.png",
-													"TODO_Max_assis.png",
-													"TODO_Max_debout.png",
-													"TODO_Max_mignon.png"
+													"Max_1958.jpg",
+													"Max_couleur.jpg",
+													"Max_polaroid_1.jpg",
+													"Max_polaroid_2.jpg",
+													"Josseline_1980.jpg",
+													"Josseline_couleur.jpg",
+													"Josseline_polaroid.jpg",
+													"Max_1981.jpg"
 												],
-												"foldername": "Mon_bebou"
+												"foldername": "Mes_bebous"
 											},
 											{
 												"files":
@@ -90,16 +93,16 @@ var udiskData =
 							}
 						],
 						"files": [
-							"TODO_MDP_tableau.png",
-							"TODO_plan_boc.png",
-							"TODO_scan_journal.png"
+							"MDP_tableau.png",
+							"plan_boc.png",
+							"scan_journal.jpg"
 						],
 						"password": "Tech",
 						"sequence": 1,
 						"foldername": "Tech"
 					},
 					{
-						"files": ["TODO_Arbre g\u00e9n\u00e9alogique.png"]
+						"files": ["Arbre_genealogique.png"]
 						, "foldername": "T\u00e9l\u00e9chargements"
 					}
 				],
