@@ -70,8 +70,8 @@ var udiskData =
 											}
 										],
 										"files": [
-											"memo_heritiers.png",
-											"poeme_prefere.png"
+											"memo_heritiers.jpg",
+											"lettre_a_mes_petits_enfants.png"
 										],
 										"password": "1943",
 										"sequence": 2,
