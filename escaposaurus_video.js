@@ -149,6 +149,9 @@ function unlockContacts(){
 	for(var i = 0 ; i < z.length ; i++){
 		z[i].classList.remove("no-call") ;
 	}
+
+	var phoneAudio = new Audio("boc_gamedata/audio/phone.mp3");
+	phoneAudio.play();
 }
 
 function unlockContact(contactNumber) {
