@@ -40,8 +40,8 @@ video{max-width: 960px;}
 /*size of the countainer defined to fit most used screen resolution*/
 /*main div container*/
 #main-container{
-	max-width: 1300px;
-	max-height:800px;
+	width: 100%;
+	height: 100%;
 	margin: auto;
 	height:100%;
 	border:1px solid var(--bar-color);
@@ -66,14 +66,13 @@ video{max-width: 960px;}
 }
 
 #container-homeMission{
-	width:800px;
-	background-color:white;
-	margin-top:20px;
-	padding-bottom:20px;
+	width: 100%;
+	height: 100%;
+	background-color:#DEEFFF;
 }
 
 #div-homeMission{
-	background-color:#dcdcdc;
+	background-color:#AED6F9;
 	border:2px solid var(--bar-color);
 	padding:5px;
 }
@@ -111,7 +110,7 @@ video{max-width: 960px;}
 
 /*call app*/
 #callApp{
-	width:500px;
+	width:300px;
 	height:auto;
 	padding:0 0 0 0;
 	margin:50 100 12 50;
@@ -121,10 +120,11 @@ video{max-width: 960px;}
 }
 
 #callApp-help, #callApp-prompt{
-	font-size:18px;
+	font-family: Handjet;
+	font-size:20px;
 	padding:10px;
 	text-align: center;
-	background-color:#ccc;
+	background-color:#AED6F9;
 	color:black;
 }
 
@@ -164,11 +164,12 @@ video{max-width: 960px;}
 
 /* udisk app*/
 #folderApp{
-	width:450px;
-	height:650px;
+	width:auto;
+	height:auto;
+	max-height: 95%;
 	overflow: auto;
 	padding:0 0 0 0;
-	margin:50 0 0 150;
+	margin:20 0 0 150;
 	background-color:#ffffff80;
 	border:2px solid black;
 }
@@ -196,11 +197,12 @@ video{max-width: 960px;}
 #UIvid-window{
 	position:absolute;
 	z-index:305;
-	left:20%;
-	top:10%;
+	top:5%;
+	left:35%;
 	border:1px solid white;
 	background-color:#000;
-	width:1000px;
+	width:auto;
+	height: auto;
 	text-align: center;
 }
 
@@ -215,7 +217,7 @@ video{max-width: 960px;}
 #credit-window{
 	position:absolute;
 	z-index:300;
-	left:45%;
+	left:calc(50% - 100px);
 	top:35%;
 	border:1px solid white;
 	background-color:#000;
@@ -259,7 +261,7 @@ video{max-width: 960px;}
 	border: none;
 	padding:3px;
 	margin:3px;
-	font-family: Roboto ;
+	font-family: Handjet ;
 	font-size:14px;
 	font-weight:bold;
 }
@@ -310,7 +312,7 @@ video{max-width: 960px;}
 	border:none;
 	margin-right:5px;
 	padding:3px;
-	font-family: Roboto ;
+	font-family: Handjet ;
 	font-size:16px;
 	font-weight:bold;
 }
@@ -423,6 +425,10 @@ ul{
 }
 
 .arbo:last-child:after{ display: none }
+
+.final-file {
+	color: red;
+}
 
 /*for the animation of the windows we open and close*/
 @keyframes fadeIn {

@@ -276,6 +276,10 @@ function cFile(name, parent, fullPath){
 	elemA.innerHTML = name ;
 	elem.appendChild(elemA) ;
 
+	// HACK: Force the final file to be red.
+	if(name === "photo_avec_michel_1940.png")
+		elemA.classList.add("final-file");
+
 	var p = document.getElementById(parent+"ul") ;
 	p.appendChild(elem) ;
 }
