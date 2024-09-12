@@ -103,7 +103,6 @@ function loadGame(folders, files, overlay){
 
     createContactList() ;
     lockContacts() ;
-	unlockContact(0) ;
 
     /*launch lightbox after creation of the udisk to make it work*/
     startLighBox() ;

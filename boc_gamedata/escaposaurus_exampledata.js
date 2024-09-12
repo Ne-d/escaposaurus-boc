@@ -23,8 +23,8 @@ var videoRoot = gameDataRoot + "videos/";
 var contactVideoRoot = videoRoot + "contactVideo/";
 
 /*full path to intro / outro video*/
-var missionVideoPath = videoRoot + "introVideo/intro1.mp4"; // TODO
-var introVideoPath = videoRoot + "introVideo/intro.mp4"; // TODO
+var missionVideoPath = videoRoot + "introVideo/introMamie.mp4";
+var introVideoPath = videoRoot + "introVideo/introAvocat.mp4";
 var missingVideoPath = videoRoot + "contactVideo/missing/final.mp4"; // TODO
 var epilogueVideoPath = videoRoot + "epilogueVideo/epiloguecredit.mp4"; // TODO
 
@@ -110,10 +110,10 @@ var udiskData =
 	}
 };
 
-var gameTitle = "TODO: Titre du jeu.";
-var gameDescriptionHome = "TODO: Description du jeu.";
-var gameMissionCall = "TODO: objectif de la mission.";
-var gameMissionAccept = "&raquo;&raquo; TODO: Accéder à l'ordinateur (JOUER) &laquo;&laquo;";
+var gameTitle = "";
+var gameDescriptionHome = "Infiltrez vous dans la tour BOC, cherchez des preuves et déterrez les sombres secrets du fondateur et PDG de l'entreprise.";
+var gameMissionCall = "Connectez-vous sur l'ordinateur de Marcel BOC pour trouver une preuve qu'il a évincé votre grand-père du brevet du stylo-bille.";
+var gameMissionAccept = "&raquo;&raquo; Accéder à l'ordinateur (JOUER) &laquo;&laquo;";
 
 var gameCredit = "TODO: Un jeu conçu et réalisé par : <br/>Stéphanie Mader";
 var gameThanks = "TODO: Remerciements : <br/> ;)";
@@ -146,8 +146,8 @@ var sequenceWin = 4;
 /*if you put "none" or anything that is not an existing filename, the player will NOT be able to call the contacts during this sequence*/
 var seqMainHint = [];
 seqMainHint[0] = "noHint";
-seqMainHint[1] = "noHint"; /*if you put anything that is not an existing filename of the udisk, the player will never be able to call any contacts or get helps during this sequence*/
-seqMainHint[2] = "noHint";
+seqMainHint[1] = "noHint";
+seqMainHint[2] = "article_armee_air.jpg";
 seqMainHint[3] = "noHint";
 
 /*contact list, vid is the name of their folder in the videoContact folder, then the game autoload the video named seq%number of the current sequence%, e.g. seq0.MP4 for the first sequence (numbered 0 because computer science habits)
@@ -173,7 +173,7 @@ normalContacts[1] = {
 /*second part of the list, contact that can help the player*/
 var helperContacts = [];
 helperContacts[0] = {
-	"vid": "Cam1",
+	"vid": "1",
 	"vod_folder": "",
 	"username": "Cam 1",
 	"canal": "video",
