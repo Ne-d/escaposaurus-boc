@@ -44,7 +44,10 @@ var udiskData =
 				"folders": [
 					{
 						"foldername": "Corbeille",
-						"files": ["note_admin.jpg"]
+						"files": [
+							"MDP_tableau.png",
+							"note_admin.jpg"
+						]
 					},
 					{
 						"folders": [
@@ -70,7 +73,6 @@ var udiskData =
 											}
 										],
 										"files": [
-											"memo_heritiers.jpg",
 											"lettre_a_mes_petits_enfants.png"
 										],
 										"password": "1943",
@@ -90,14 +92,16 @@ var udiskData =
 							}
 						],
 						"files": [
-							"MDP_tableau.png",
 							"plan_boc.png",
 							"scan_journal.png"
 						],
 						"foldername": "Tech"
 					},
 					{
-						"files": ["Arbre_genealogique.png"]
+						"files": [
+							"Arbre_genealogique.png",
+							"memo_anniversaires.jpg",
+						]
 						, "foldername": "T\u00e9l\u00e9chargements"
 					}
 				],
