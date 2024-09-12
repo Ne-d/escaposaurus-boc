@@ -32,6 +32,10 @@ video{max-width: 960px;}
     font-family: Odibee;
     src: url('img/fonts/Odibee_Sans/OdibeeSans-Regular.ttf') format('truetype');
 }
+@font-face {
+    font-family: Handjet;
+    src: url('img/fonts/Handjet/Handjet-Regular.ttf') format('truetype');
+}
 
 /*size of the countainer defined to fit most used screen resolution*/
 /*main div container*/
@@ -80,7 +84,7 @@ video{max-width: 960px;}
 	font-weight: bold;
 	padding:5px;
 	background-color:var(--bar-color);
-	font-family: Roboto;
+	font-family: Handjet;
 }
 
 #main-game-div{
@@ -94,10 +98,14 @@ video{max-width: 960px;}
 	border:1px solid white;
 	color: white;
 	text-align:center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	vertical-align: middle;
 }
 
 .app-title-span{
-	font-family: Roboto ;
+	font-family: Handjet ;
 	font-size:24px;
 }
 
