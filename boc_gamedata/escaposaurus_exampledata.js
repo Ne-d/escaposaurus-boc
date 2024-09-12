@@ -116,7 +116,7 @@ var gameMissionCall = "Connectez-vous sur l'ordinateur de Marcel BOC pour trouve
 var gameMissionAccept = "&raquo;&raquo; Accéder à l'ordinateur (JOUER) &laquo;&laquo;";
 
 var gameCredit = "TODO: Un jeu conçu et réalisé par : <br/>Stéphanie Mader";
-var gameThanks = "TODO: Remerciements : <br/> ;)";
+var gameThanks = "TODO: Remerciements : <br/>Stéphanie Mader;)";
 
 var OSName = "BOC Archive Mainframe";
 var explorerName = "BOC Archive File Explorer";
@@ -124,18 +124,17 @@ var callerAppName = "ePhone 4";
 
 /*titles of video windows*/
 var titleData = {};
-titleData.introTitle = "TODO: Nom de la fenêtre d'introduction.";
-titleData.epilogueTitle = "TODO: Nom de la fenêtre d'épilogue.";
-titleData.callTitle = "TODO: Appel en cours";
+titleData.introTitle = "Appel en cours";
+titleData.epilogueTitle = "Appel en cours";
+titleData.callTitle = "Appel en cours";
 
 /*change of caller app prompt for each sequence*/
 var promptDefault = "Contacts";
 var prompt = [];
-// TODO: Change those.
-prompt[0] = "Prendre contact";
-prompt[1] = "";
-prompt[2] = "";
-prompt[3] = "Envoyer la carte";
+prompt[0] = "Contacts";
+prompt[1] = "Contacts";
+prompt[2] = "Contacts";
+prompt[3] = "Contacts";
 prompt[4] = "Appelez Maître Vernier pour conclure.";
 
 /*when the sequence number reach this, the player win, the missing contact is added and the player can call them*/
@@ -149,6 +148,7 @@ seqMainHint[0] = "noHint";
 seqMainHint[1] = "noHint";
 seqMainHint[2] = "article_armee_air.jpg";
 seqMainHint[3] = "noHint";
+seqMainHint[4] = "photo_avec_michel_1940.png"
 
 /*contact list, vid is the name of their folder in the videoContact folder, then the game autoload the video named seq%number of the current sequence%, e.g. seq0.MP4 for the first sequence (numbered 0 because computer science habits)
 their img need to be placed in their video folder, username is their displayed name
@@ -173,7 +173,7 @@ normalContacts[1] = {
 /*second part of the list, contact that can help the player*/
 var helperContacts = [];
 helperContacts[0] = {
-	"vid": "1",
+	"vid": "Cam1",
 	"vod_folder": "",
 	"username": "Cam 1",
 	"canal": "video",
@@ -189,7 +189,7 @@ helperContacts[1] = {
 };
 
 /*ce qui apparait quand on trouve le dernier élément du disque dur*/
-finalStepAdded = "TODO: Message quand la dernière étape est débloqué.";
+finalStepAdded = "Félicitation, vous avez decouvert la pièce à conviciton prouvant le vol de l'invention du stylo a bille.<br/>Ouvrez le fichier \"photo_avec_michel_1940\" pour continuer.";
 
 /*the last call, it can be the person we find in the end or anyone else we call to end the quest, allows the game to know it is the final contact that is called and to proceed with the ending*/
 var missingContact = {
@@ -211,12 +211,12 @@ tips['Albert'][3] = "Ah zut, un dossier verouillé sans infos dans scan mémo ? 
 
 /*text for the instruction / solution windows*/
 var instructionText = {};
-instructionText.winState = "Vous avez retrouvé l'id GPS et vous pouvez appeler les secours du secteur.";
+instructionText.winState = "Vous avez découvert la photo prouvant que l'invention du stylo-bille a été volée, vous allez certainement gagner le procès..";
 instructionText.lackMainHint = "";
 instructionText.password = "Vous devez trouver et entrer le mot de passe d'un des dossiers de la boite de droite. Vous pouvez trouver le mot de passe en appelant les contacts de la boite de gauche.<br/>Pour entrer un mot de passe, cliquez sur le nom d'un dossier et une fenêtre s'affichera pour que vous puissiez donner le mot de passe.";
 
 /*please note the %s into the text that allow to automatically replace them with the right content according to which sequence the player is in*/
 var solutionText = {};
-solutionText.winState = "TODO: Si Sabine a été secourue, le jeu est fini bravo.";
+solutionText.winState = "Si vous avez débloqué le dernier dossier, vous avez déjà gagné.";
 solutionText.lackMainHint = "Vous devez ouvrir le fichier <b>%s</b><br/>";
 solutionText.password = "Vous devez déverouiller le dossier <b>%s1</b><br/>avec le mot de passe : <b>%s2</b><br/>";
