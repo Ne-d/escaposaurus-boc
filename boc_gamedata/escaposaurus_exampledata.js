@@ -44,7 +44,7 @@ var udiskData =
 				"folders": [
 					{
 						"foldername": "Corbeille",
-						"files": ["note_admin.png"]
+						"files": ["note_admin.jpg"]
 					},
 					{
 						"folders": [
@@ -54,20 +54,16 @@ var udiskData =
 										"folders": [
 											{
 												"files": [
-													"Maximus_1958.jpg",
-													"Maximus_couleur.jpg",
-													"Maximus_polaroid_1.jpg",
-													"Maximus_polaroid_2.jpg",
-													"Josseline_1980.jpg",
-													"Josseline_couleur.jpg",
 													"Josseline_polaroid.jpg",
 													"Maximus_1981.jpg"
 												],
 												"foldername": "Mes_bebous"
 											},
 											{
-												"files":
-													["photo_avec_michel_1940.png"],
+												"files": [
+														"photo_avec_michel_1940.png",
+														"plan_boc_michel.jpg",
+													],
 												"password": "stylos",
 												"sequence": 3,
 												"foldername": "Souvenirs"
@@ -86,7 +82,6 @@ var udiskData =
 									"association_ecologique_de_france.png",
 									"telegramme.png",
 									"resultat_analyse_12_12_2009.jpg",
-									"plan_boc_proto_V3_final.jpg",
 									"article_armee_air.jpg"
 								],
 								"foldername": "Entreprise",
@@ -178,7 +173,7 @@ normalContacts[1] = {
 /*second part of the list, contact that can help the player*/
 var helperContacts = [];
 helperContacts[0] = {
-	"vid": "Camera",
+	"vid": "Cam1",
 	"vod_folder": "",
 	"username": "Cam 1",
 	"canal": "video",
@@ -186,7 +181,7 @@ helperContacts[0] = {
 };
 
 helperContacts[1] = {
-	"vid": "Camera",
+	"vid": "Cam2",
 	"vod_folder": "",
 	"username": "Cam 2",
 	"canal": "video",
@@ -202,7 +197,7 @@ var missingContact = {
 	"vod_folder": "",
 	"username": "Maître Vernier (Avocat)",
 	"canal": "video",
-	"avatar": "avocat_avatar.jpg"
+	"avatar": "avocat_avatar.png"
 };
 
 /*Lou only send text message, they are stored here*/
