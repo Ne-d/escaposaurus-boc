@@ -1,4 +1,3 @@
-<!--
 /////////////////////////////////////////////////////////////
 /// Escapausorus v1 (2020)
 ///	A quick and dirty framework to create small adventure game (certified vanilla JS)
@@ -6,7 +5,6 @@
 /// GitHub: https://github.com/RedNaK/escaposaurus
 ///	Licence: MIT
 ////////////////////////////////////////////////////////////
--->
 
 	/*
 		HERE IS THE CONFIGURATION OF THE GAME

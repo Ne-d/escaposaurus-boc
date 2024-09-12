@@ -1,4 +1,3 @@
-<!--
 /////////////////////////////////////////////////////////////
 /// Escaposaurus v1 (2020)
 ///	A quick and dirty framework to create small adventure game (certified vanilla JS)
@@ -6,7 +5,6 @@
 /// GitHub: https://github.com/RedNaK/escaposaurus
 ///	Licence: MIT
 ////////////////////////////////////////////////////////////
--->
 
 
 /*some needed initialization*/
@@ -117,6 +115,7 @@ function loadGame(folders, files, overlay){
     /*ok y'a un truc de sécurité qui fait que ça n'auto-play pas si y'a pas eu un click avant*/
     /*faudra juste faire un message, call entrant, puis ok qui ouvre cette vidéo*/
     setTimeout(function () {
+		playPhoneSound();
 		openIt('calling-window') ;
 	},500);
 }
@@ -141,6 +140,11 @@ var callbackClicHint = function(evt){
 	}
 }
 
+function playPhoneSound() {
+	var phoneAudio = new Audio("boc_gamedata/audio/phone_vibrate.mp3");
+	phoneAudio.play();
+}
+
 function unlockContacts(){
 	var p = document.getElementById("callApp-prompt") ;
 	p.innerHTML = prompt[sequenceNumber] ;
@@ -150,8 +154,7 @@ function unlockContacts(){
 		z[i].classList.remove("no-call") ;
 	}
 
-	var phoneAudio = new Audio("boc_gamedata/audio/phone.mp3");
-	phoneAudio.play();
+	playPhoneSound();
 }
 
 function unlockContact(contactNumber) {
